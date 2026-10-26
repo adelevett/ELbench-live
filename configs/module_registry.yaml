@@ -1,0 +1,17 @@
+modules:
+  - module_name: 安全可信
+    enabled: true
+    description: 教育安全与可信相关评测。
+    owner: current
+  - module_name: 高阶育人
+    enabled: true
+    description: 教育场景中的高阶育人能力评测。
+    owner: current
+  - module_name: 通用模型
+    enabled: true
+    description: 通用模型能力 benchmark。
+    owner: current
+  - module_name: 基本教育
+    enabled: true
+    description: 基本教育多场景评测（45题），运行时使用内部 basic_education_runtime 多轮执行模块。
+    owner: current

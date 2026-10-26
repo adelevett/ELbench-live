@@ -1,0 +1,24 @@
+__pycache__/
+.DS_Store
+*.pyc
+*.pyo
+*.pyd
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.DS_Store
+pytest-cache-files-*/
+.conda/
+.venv/
+venv/
+dist/
+build/
+*.egg-info/
+outputs/
+key.txt
+tmp/
+tmp_test_artifacts/
+results/
+
+# Local secrets
+.env

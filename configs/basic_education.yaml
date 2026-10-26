@@ -1,0 +1,71 @@
+enabled: true
+module_name: 基本教育
+runtime_python: python
+runtime_cli_module: elbench.basic_education_runtime.cli.main
+command_timeout_seconds: 14400
+continue_on_error: true
+workspace_root: outputs/basic_education
+test_endpoint_model_id: qwen-test
+evaluator_model_id: null
+default_pass_threshold: 3.0
+scenarios:
+  - scenario_id: knowledge_point_explanation
+    source_file: knowledge.yaml
+    subset: 知识点讲解
+    task: basic_knowledge_point_explanation
+    template_path: 基本教育/知识点讲解/knowledge.yaml
+    expected_tasks: 10
+    multi_turn: false
+    dimension: 知识点讲解
+    target_model_keys: [4o_teacher]
+    test_endpoint_model_keys: []
+    judge_model_keys: [evaler]
+    pass_threshold: 3.0
+    metadata:
+      topic: basic_education
+      scene: knowledge
+  - scenario_id: contextualized_question_generation
+    source_file: question.yaml
+    subset: 情景化出题
+    task: basic_contextualized_question_generation
+    template_path: 基本教育/情景化出题/question.yaml
+    expected_tasks: 10
+    multi_turn: false
+    dimension: 情景化出题
+    target_model_keys: [test_model]
+    test_endpoint_model_keys: []
+    judge_model_keys: [judge_model]
+    pass_threshold: 3.0
+    metadata:
+      topic: basic_education
+      scene: question
+  - scenario_id: interdisciplinary_lesson_plan_generation
+    source_file: cross.yaml
+    subset: 跨学科教案生成
+    task: basic_interdisciplinary_lesson_plan_generation
+    template_path: 基本教育/跨学科教案生成/cross.yaml
+    expected_tasks: 10
+    multi_turn: false
+    dimension: 跨学科教案生成
+    target_model_keys: [test_model]
+    test_endpoint_model_keys: []
+    judge_model_keys: [judge_model]
+    pass_threshold: 3.0
+    metadata:
+      topic: basic_education
+      scene: cross
+  - scenario_id: guided_problem_solving_teaching
+    source_file: config_guided_task.yaml
+    subset: 引导式讲题
+    task: basic_guided_problem_solving_teaching
+    template_path: 基本教育/引导式讲题/config_guided_task.yaml
+    expected_tasks: 15
+    multi_turn: true
+    dimension: 引导式讲题
+    target_model_keys: [teacher]
+    test_endpoint_model_keys: [stu]
+    judge_model_keys: [eval]
+    pass_threshold: 3.0
+    metadata:
+      topic: basic_education
+      scene: guided

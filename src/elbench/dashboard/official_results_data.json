@@ -1,0 +1,1335 @@
+{
+  "official_models": [
+    {
+      "rank": 1,
+      "model_id": "deepseek-v4-flash",
+      "display_name": "DeepSeek-V4-Flash",
+      "overall": 83.7,
+      "ci_95": "[82, 85]",
+      "general": 88.5,
+      "safety": 89.7,
+      "basic_education": 84.9,
+      "high_level": 71.5,
+      "items": 2939,
+      "per_file": {
+        "SATAs.xlsx": {
+          "count": 150,
+          "pass_rate_pct": 57.33,
+          "avg_score": 0.5933,
+          "normalized_pct": 59.33
+        },
+        "adversarial_prompts.xlsx": {
+          "count": 100,
+          "pass_rate_pct": 64.0,
+          "avg_score": 0.676,
+          "normalized_pct": 67.6
+        },
+        "aime24_sampled.jsonl": {
+          "count": 30,
+          "pass_rate_pct": 73.33,
+          "avg_score": 0.7333,
+          "normalized_pct": 73.33
+        },
+        "aime25.jsonl": {
+          "count": 30,
+          "pass_rate_pct": 70.0,
+          "avg_score": 0.7,
+          "normalized_pct": 70.0
+        },
+        "aime26.jsonl": {
+          "count": 30,
+          "pass_rate_pct": 66.67,
+          "avg_score": 0.6667,
+          "normalized_pct": 66.67
+        },
+        "ceval_sampled.jsonl": {
+          "count": 208,
+          "pass_rate_pct": 92.31,
+          "avg_score": 0.9231,
+          "normalized_pct": 92.31
+        },
+        "config_guided_task.yaml": {
+          "count": 15,
+          "pass_rate_pct": 92.86,
+          "avg_score": 4.6123,
+          "normalized_pct": 92.25
+        },
+        "cross.yaml": {
+          "count": 10,
+          "pass_rate_pct": 100.0,
+          "avg_score": 4.1793,
+          "normalized_pct": 83.59
+        },
+        "ifeval_sampled.jsonl": {
+          "count": 200,
+          "pass_rate_pct": 89.5,
+          "avg_score": 0.895,
+          "normalized_pct": 89.5
+        },
+        "knowledge.yaml": {
+          "count": 10,
+          "pass_rate_pct": 100.0,
+          "avg_score": 7.6,
+          "normalized_pct": 76.0
+        },
+        "math_500_sampled.jsonl": {
+          "count": 200,
+          "pass_rate_pct": 97.5,
+          "avg_score": 0.975,
+          "normalized_pct": 97.5
+        },
+        "mmlu_pro_sampled.jsonl": {
+          "count": 196,
+          "pass_rate_pct": 82.65,
+          "avg_score": 0.8265,
+          "normalized_pct": 82.65
+        },
+        "question.yaml": {
+          "count": 10,
+          "pass_rate_pct": 100.0,
+          "avg_score": 4.386,
+          "normalized_pct": 87.72
+        },
+        "安全回答.jsonl": {
+          "count": 250,
+          "pass_rate_pct": 100.0,
+          "avg_score": 1.0,
+          "normalized_pct": 100.0
+        },
+        "安全引导.jsonl": {
+          "count": 250,
+          "pass_rate_pct": 99.2,
+          "avg_score": 0.9932,
+          "normalized_pct": 99.32
+        },
+        "安全拒答.jsonl": {
+          "count": 250,
+          "pass_rate_pct": 96.4,
+          "avg_score": 0.9696,
+          "normalized_pct": 96.96
+        },
+        "高阶育人-edu.jsonl": {
+          "count": 500,
+          "pass_rate_pct": 92.6,
+          "avg_score": 0.9101,
+          "normalized_pct": 92.6
+        },
+        "高阶育人-omni.jsonl": {
+          "count": 500,
+          "pass_rate_pct": 50.4,
+          "avg_score": 0.504,
+          "normalized_pct": 50.4
+        }
+      },
+      "openrouter_slug": "deepseek/deepseek-v4-flash",
+      "prompt_usd_per_token": 9.1e-08,
+      "completion_usd_per_token": 1.82e-07,
+      "module_ci": {
+        "general": [
+          86.5,
+          90.5
+        ],
+        "safety": [
+          87.9,
+          91.5
+        ],
+        "basic_education": [
+          81.0,
+          88.0
+        ],
+        "high_level": [
+          68.6,
+          74.3
+        ]
+      },
+      "overall_ci": [
+        82.3,
+        84.9
+      ]
+    },
+    {
+      "rank": 2,
+      "model_id": "gemini-3.5-flash",
+      "display_name": "Gemini-3.5-Flash",
+      "overall": 83.4,
+      "ci_95": "[82, 84]",
+      "general": 93.4,
+      "safety": 70.2,
+      "basic_education": 94.6,
+      "high_level": 75.3,
+      "items": 2939,
+      "per_file": {
+        "SATAs.xlsx": {
+          "count": 150,
+          "pass_rate_pct": 52.0,
+          "avg_score": 0.5533,
+          "normalized_pct": 55.33
+        },
+        "adversarial_prompts.xlsx": {
+          "count": 100,
+          "pass_rate_pct": 48.0,
+          "avg_score": 0.542,
+          "normalized_pct": 54.2
+        },
+        "aime24_sampled.jsonl": {
+          "count": 30,
+          "pass_rate_pct": 86.67,
+          "avg_score": 0.8667,
+          "normalized_pct": 86.67
+        },
+        "aime25.jsonl": {
+          "count": 30,
+          "pass_rate_pct": 80.0,
+          "avg_score": 0.8,
+          "normalized_pct": 80.0
+        },
+        "aime26.jsonl": {
+          "count": 30,
+          "pass_rate_pct": 86.67,
+          "avg_score": 0.8667,
+          "normalized_pct": 86.67
+        },
+        "ceval_sampled.jsonl": {
+          "count": 208,
+          "pass_rate_pct": 94.71,
+          "avg_score": 0.9471,
+          "normalized_pct": 94.71
+        },
+        "config_guided_task.yaml": {
+          "count": 15,
+          "pass_rate_pct": 100.0,
+          "avg_score": 4.9381,
+          "normalized_pct": 98.76
+        },
+        "cross.yaml": {
+          "count": 10,
+          "pass_rate_pct": 100.0,
+          "avg_score": 4.64,
+          "normalized_pct": 92.8
+        },
+        "ifeval_sampled.jsonl": {
+          "count": 200,
+          "pass_rate_pct": 95.5,
+          "avg_score": 0.955,
+          "normalized_pct": 95.5
+        },
+        "knowledge.yaml": {
+          "count": 10,
+          "pass_rate_pct": 100.0,
+          "avg_score": 9.2333,
+          "normalized_pct": 92.33
+        },
+        "math_500_sampled.jsonl": {
+          "count": 200,
+          "pass_rate_pct": 99.0,
+          "avg_score": 0.99,
+          "normalized_pct": 99.0
+        },
+        "mmlu_pro_sampled.jsonl": {
+          "count": 196,
+          "pass_rate_pct": 88.27,
+          "avg_score": 0.8827,
+          "normalized_pct": 88.27
+        },
+        "question.yaml": {
+          "count": 10,
+          "pass_rate_pct": 100.0,
+          "avg_score": 4.73,
+          "normalized_pct": 94.6
+        },
+        "安全回答.jsonl": {
+          "count": 250,
+          "pass_rate_pct": 100.0,
+          "avg_score": 1.0,
+          "normalized_pct": 100.0
+        },
+        "安全引导.jsonl": {
+          "count": 250,
+          "pass_rate_pct": 82.4,
+          "avg_score": 0.8392,
+          "normalized_pct": 83.92
+        },
+        "安全拒答.jsonl": {
+          "count": 250,
+          "pass_rate_pct": 35.2,
+          "avg_score": 0.42,
+          "normalized_pct": 42.0
+        },
+        "高阶育人-edu.jsonl": {
+          "count": 500,
+          "pass_rate_pct": 95.0,
+          "avg_score": 0.9287,
+          "normalized_pct": 95.0
+        },
+        "高阶育人-omni.jsonl": {
+          "count": 500,
+          "pass_rate_pct": 55.6,
+          "avg_score": 0.556,
+          "normalized_pct": 55.6
+        }
+      },
+      "openrouter_slug": "google/gemini-3.5-flash",
+      "prompt_usd_per_token": 1.5e-06,
+      "completion_usd_per_token": 9e-06,
+      "module_ci": {
+        "general": [
+          91.8,
+          95.0
+        ],
+        "safety": [
+          67.5,
+          72.8
+        ],
+        "basic_education": [
+          93.3,
+          95.9
+        ],
+        "high_level": [
+          72.6,
+          78.0
+        ]
+      },
+      "overall_ci": [
+        82.3,
+        84.5
+      ]
+    },
+    {
+      "rank": 3,
+      "model_id": "doubao-seed-2.0-pro",
+      "display_name": "Doubao-Seed-2.0-Pro",
+      "overall": 83.2,
+      "ci_95": "[82, 84]",
+      "general": 86.6,
+      "safety": 83.0,
+      "basic_education": 89.7,
+      "high_level": 73.5,
+      "items": 2939,
+      "per_file": {
+        "SATAs.xlsx": {
+          "count": 150,
+          "pass_rate_pct": 50.0,
+          "avg_score": 0.5167,
+          "normalized_pct": 51.67
+        },
+        "adversarial_prompts.xlsx": {
+          "count": 100,
+          "pass_rate_pct": 100.0,
+          "avg_score": 1.0,
+          "normalized_pct": 100.0
+        },
+        "aime24_sampled.jsonl": {
+          "count": 30,
+          "pass_rate_pct": 66.67,
+          "avg_score": 0.6667,
+          "normalized_pct": 66.67
+        },
+        "aime25.jsonl": {
+          "count": 30,
+          "pass_rate_pct": 46.67,
+          "avg_score": 0.4667,
+          "normalized_pct": 46.67
+        },
+        "aime26.jsonl": {
+          "count": 30,
+          "pass_rate_pct": 56.67,
+          "avg_score": 0.5667,
+          "normalized_pct": 56.67
+        },
+        "ceval_sampled.jsonl": {
+          "count": 208,
+          "pass_rate_pct": 90.87,
+          "avg_score": 0.9087,
+          "normalized_pct": 90.87
+        },
+        "config_guided_task.yaml": {
+          "count": 15,
+          "pass_rate_pct": 100.0,
+          "avg_score": 4.8469,
+          "normalized_pct": 96.94
+        },
+        "cross.yaml": {
+          "count": 10,
+          "pass_rate_pct": 100.0,
+          "avg_score": 4.2573,
+          "normalized_pct": 85.15
+        },
+        "ifeval_sampled.jsonl": {
+          "count": 200,
+          "pass_rate_pct": 90.0,
+          "avg_score": 0.9,
+          "normalized_pct": 90.0
+        },
+        "knowledge.yaml": {
+          "count": 10,
+          "pass_rate_pct": 100.0,
+          "avg_score": 8.65,
+          "normalized_pct": 86.5
+        },
+        "math_500_sampled.jsonl": {
+          "count": 200,
+          "pass_rate_pct": 94.5,
+          "avg_score": 0.945,
+          "normalized_pct": 94.5
+        },
+        "mmlu_pro_sampled.jsonl": {
+          "count": 196,
+          "pass_rate_pct": 84.18,
+          "avg_score": 0.8418,
+          "normalized_pct": 84.18
+        },
+        "question.yaml": {
+          "count": 10,
+          "pass_rate_pct": 100.0,
+          "avg_score": 4.518,
+          "normalized_pct": 90.36
+        },
+        "安全回答.jsonl": {
+          "count": 250,
+          "pass_rate_pct": 100.0,
+          "avg_score": 1.0,
+          "normalized_pct": 100.0
+        },
+        "安全引导.jsonl": {
+          "count": 250,
+          "pass_rate_pct": 100.0,
+          "avg_score": 0.9998,
+          "normalized_pct": 99.98
+        },
+        "安全拒答.jsonl": {
+          "count": 250,
+          "pass_rate_pct": 53.6,
+          "avg_score": 0.6112,
+          "normalized_pct": 61.12
+        },
+        "高阶育人-edu.jsonl": {
+          "count": 500,
+          "pass_rate_pct": 94.2,
+          "avg_score": 0.9231,
+          "normalized_pct": 94.2
+        },
+        "高阶育人-omni.jsonl": {
+          "count": 500,
+          "pass_rate_pct": 52.8,
+          "avg_score": 0.528,
+          "normalized_pct": 52.8
+        }
+      },
+      "openrouter_slug": null,
+      "prompt_usd_per_token": null,
+      "completion_usd_per_token": null,
+      "module_ci": {
+        "general": [
+          84.4,
+          88.9
+        ],
+        "safety": [
+          80.8,
+          85.2
+        ],
+        "basic_education": [
+          88.5,
+          91.0
+        ],
+        "high_level": [
+          70.7,
+          76.3
+        ]
+      },
+      "overall_ci": [
+        82.1,
+        84.3
+      ]
+    },
+    {
+      "rank": 4,
+      "model_id": "claude-opus-4-8",
+      "display_name": "Claude-Opus-4.8",
+      "overall": 83.1,
+      "ci_95": "[82, 84]",
+      "general": 91.9,
+      "safety": 78.5,
+      "basic_education": 92.7,
+      "high_level": 69.5,
+      "items": 2939,
+      "per_file": {
+        "SATAs.xlsx": {
+          "count": 150,
+          "pass_rate_pct": 47.33,
+          "avg_score": 0.49,
+          "normalized_pct": 49.0
+        },
+        "adversarial_prompts.xlsx": {
+          "count": 100,
+          "pass_rate_pct": 90.0,
+          "avg_score": 0.9015,
+          "normalized_pct": 90.15
+        },
+        "aime24_sampled.jsonl": {
+          "count": 30,
+          "pass_rate_pct": 96.67,
+          "avg_score": 0.9667,
+          "normalized_pct": 96.67
+        },
+        "aime25.jsonl": {
+          "count": 30,
+          "pass_rate_pct": 100.0,
+          "avg_score": 1.0,
+          "normalized_pct": 100.0
+        },
+        "aime26.jsonl": {
+          "count": 30,
+          "pass_rate_pct": 96.67,
+          "avg_score": 0.9667,
+          "normalized_pct": 96.67
+        },
+        "ceval_sampled.jsonl": {
+          "count": 208,
+          "pass_rate_pct": 93.75,
+          "avg_score": 0.9375,
+          "normalized_pct": 93.75
+        },
+        "config_guided_task.yaml": {
+          "count": 15,
+          "pass_rate_pct": 100.0,
+          "avg_score": 4.9381,
+          "normalized_pct": 98.76
+        },
+        "cross.yaml": {
+          "count": 10,
+          "pass_rate_pct": 100.0,
+          "avg_score": 4.3213,
+          "normalized_pct": 86.43
+        },
+        "ifeval_sampled.jsonl": {
+          "count": 200,
+          "pass_rate_pct": 88.0,
+          "avg_score": 0.88,
+          "normalized_pct": 88.0
+        },
+        "knowledge.yaml": {
+          "count": 10,
+          "pass_rate_pct": 100.0,
+          "avg_score": 9.2,
+          "normalized_pct": 92.0
+        },
+        "math_500_sampled.jsonl": {
+          "count": 200,
+          "pass_rate_pct": 95.0,
+          "avg_score": 0.95,
+          "normalized_pct": 95.0
+        },
+        "mmlu_pro_sampled.jsonl": {
+          "count": 196,
+          "pass_rate_pct": 87.76,
+          "avg_score": 0.8776,
+          "normalized_pct": 87.76
+        },
+        "question.yaml": {
+          "count": 10,
+          "pass_rate_pct": 100.0,
+          "avg_score": 4.68,
+          "normalized_pct": 93.6
+        },
+        "安全回答.jsonl": {
+          "count": 250,
+          "pass_rate_pct": 100.0,
+          "avg_score": 1.0,
+          "normalized_pct": 100.0
+        },
+        "安全引导.jsonl": {
+          "count": 250,
+          "pass_rate_pct": 98.0,
+          "avg_score": 0.9796,
+          "normalized_pct": 97.96
+        },
+        "安全拒答.jsonl": {
+          "count": 250,
+          "pass_rate_pct": 39.6,
+          "avg_score": 0.5042,
+          "normalized_pct": 50.42
+        },
+        "高阶育人-edu.jsonl": {
+          "count": 500,
+          "pass_rate_pct": 87.8,
+          "avg_score": 0.865,
+          "normalized_pct": 87.8
+        },
+        "高阶育人-omni.jsonl": {
+          "count": 500,
+          "pass_rate_pct": 51.2,
+          "avg_score": 0.512,
+          "normalized_pct": 51.2
+        }
+      },
+      "openrouter_slug": "anthropic/claude-opus-4.8",
+      "prompt_usd_per_token": 5e-06,
+      "completion_usd_per_token": 2.5e-05,
+      "module_ci": {
+        "general": [
+          90.0,
+          93.6
+        ],
+        "safety": [
+          76.1,
+          80.8
+        ],
+        "basic_education": [
+          91.4,
+          94.0
+        ],
+        "high_level": [
+          66.6,
+          72.3
+        ]
+      },
+      "overall_ci": [
+        82.0,
+        84.2
+      ]
+    },
+    {
+      "rank": 4,
+      "model_id": "gpt-5.4",
+      "display_name": "GPT-5.4",
+      "overall": 83.1,
+      "ci_95": "[82, 84]",
+      "general": 86.4,
+      "safety": 76.6,
+      "basic_education": 94.4,
+      "high_level": 75.1,
+      "items": 2939,
+      "per_file": {
+        "SATAs.xlsx": {
+          "count": 150,
+          "pass_rate_pct": 43.33,
+          "avg_score": 0.4467,
+          "normalized_pct": 44.67
+        },
+        "adversarial_prompts.xlsx": {
+          "count": 100,
+          "pass_rate_pct": 100.0,
+          "avg_score": 1.0,
+          "normalized_pct": 100.0
+        },
+        "aime24_sampled.jsonl": {
+          "count": 30,
+          "pass_rate_pct": 80.0,
+          "avg_score": 0.8,
+          "normalized_pct": 80.0
+        },
+        "aime25.jsonl": {
+          "count": 30,
+          "pass_rate_pct": 50.0,
+          "avg_score": 0.5,
+          "normalized_pct": 50.0
+        },
+        "aime26.jsonl": {
+          "count": 30,
+          "pass_rate_pct": 63.33,
+          "avg_score": 0.6333,
+          "normalized_pct": 63.33
+        },
+        "ceval_sampled.jsonl": {
+          "count": 208,
+          "pass_rate_pct": 86.06,
+          "avg_score": 0.8606,
+          "normalized_pct": 86.06
+        },
+        "config_guided_task.yaml": {
+          "count": 15,
+          "pass_rate_pct": 100.0,
+          "avg_score": 4.9,
+          "normalized_pct": 98.0
+        },
+        "cross.yaml": {
+          "count": 10,
+          "pass_rate_pct": 100.0,
+          "avg_score": 4.5967,
+          "normalized_pct": 91.93
+        },
+        "ifeval_sampled.jsonl": {
+          "count": 200,
+          "pass_rate_pct": 90.0,
+          "avg_score": 0.9,
+          "normalized_pct": 90.0
+        },
+        "knowledge.yaml": {
+          "count": 10,
+          "pass_rate_pct": 70.0,
+          "avg_score": 8.9762,
+          "normalized_pct": 89.76
+        },
+        "math_500_sampled.jsonl": {
+          "count": 200,
+          "pass_rate_pct": 97.5,
+          "avg_score": 0.975,
+          "normalized_pct": 97.5
+        },
+        "mmlu_pro_sampled.jsonl": {
+          "count": 196,
+          "pass_rate_pct": 82.14,
+          "avg_score": 0.8214,
+          "normalized_pct": 82.14
+        },
+        "question.yaml": {
+          "count": 10,
+          "pass_rate_pct": 100.0,
+          "avg_score": 4.902,
+          "normalized_pct": 98.04
+        },
+        "安全回答.jsonl": {
+          "count": 250,
+          "pass_rate_pct": 100.0,
+          "avg_score": 1.0,
+          "normalized_pct": 100.0
+        },
+        "安全引导.jsonl": {
+          "count": 250,
+          "pass_rate_pct": 100.0,
+          "avg_score": 0.9998,
+          "normalized_pct": 99.98
+        },
+        "安全拒答.jsonl": {
+          "count": 250,
+          "pass_rate_pct": 31.6,
+          "avg_score": 0.3954,
+          "normalized_pct": 39.54
+        },
+        "高阶育人-edu.jsonl": {
+          "count": 500,
+          "pass_rate_pct": 94.2,
+          "avg_score": 0.9196,
+          "normalized_pct": 94.2
+        },
+        "高阶育人-omni.jsonl": {
+          "count": 500,
+          "pass_rate_pct": 56.0,
+          "avg_score": 0.56,
+          "normalized_pct": 56.0
+        }
+      },
+      "openrouter_slug": "openai/gpt-5.4",
+      "prompt_usd_per_token": 2.5e-06,
+      "completion_usd_per_token": 1.5e-05,
+      "module_ci": {
+        "general": [
+          84.2,
+          88.6
+        ],
+        "safety": [
+          74.1,
+          79.0
+        ],
+        "basic_education": [
+          93.0,
+          95.9
+        ],
+        "high_level": [
+          72.5,
+          77.7
+        ]
+      },
+      "overall_ci": [
+        82.0,
+        84.3
+      ]
+    },
+    {
+      "rank": 4,
+      "model_id": "deepseek-v4-pro",
+      "display_name": "DeepSeek-V4-Pro",
+      "overall": 83.1,
+      "ci_95": "[82, 84]",
+      "general": 88.2,
+      "safety": 86.1,
+      "basic_education": 88.5,
+      "high_level": 69.5,
+      "items": 2939,
+      "per_file": {
+        "SATAs.xlsx": {
+          "count": 150,
+          "pass_rate_pct": 57.33,
+          "avg_score": 0.5867,
+          "normalized_pct": 58.67
+        },
+        "adversarial_prompts.xlsx": {
+          "count": 100,
+          "pass_rate_pct": 38.0,
+          "avg_score": 0.4295,
+          "normalized_pct": 42.95
+        },
+        "aime24_sampled.jsonl": {
+          "count": 30,
+          "pass_rate_pct": 80.0,
+          "avg_score": 0.8,
+          "normalized_pct": 80.0
+        },
+        "aime25.jsonl": {
+          "count": 30,
+          "pass_rate_pct": 63.33,
+          "avg_score": 0.6333,
+          "normalized_pct": 63.33
+        },
+        "aime26.jsonl": {
+          "count": 30,
+          "pass_rate_pct": 76.67,
+          "avg_score": 0.7667,
+          "normalized_pct": 76.67
+        },
+        "ceval_sampled.jsonl": {
+          "count": 208,
+          "pass_rate_pct": 91.83,
+          "avg_score": 0.9183,
+          "normalized_pct": 91.83
+        },
+        "config_guided_task.yaml": {
+          "count": 15,
+          "pass_rate_pct": 100.0,
+          "avg_score": 4.9341,
+          "normalized_pct": 98.68
+        },
+        "cross.yaml": {
+          "count": 10,
+          "pass_rate_pct": 100.0,
+          "avg_score": 4.0387,
+          "normalized_pct": 80.77
+        },
+        "ifeval_sampled.jsonl": {
+          "count": 200,
+          "pass_rate_pct": 86.5,
+          "avg_score": 0.865,
+          "normalized_pct": 86.5
+        },
+        "knowledge.yaml": {
+          "count": 10,
+          "pass_rate_pct": 100.0,
+          "avg_score": 8.65,
+          "normalized_pct": 86.5
+        },
+        "math_500_sampled.jsonl": {
+          "count": 200,
+          "pass_rate_pct": 98.0,
+          "avg_score": 0.98,
+          "normalized_pct": 98.0
+        },
+        "mmlu_pro_sampled.jsonl": {
+          "count": 196,
+          "pass_rate_pct": 82.65,
+          "avg_score": 0.8265,
+          "normalized_pct": 82.65
+        },
+        "question.yaml": {
+          "count": 10,
+          "pass_rate_pct": 100.0,
+          "avg_score": 4.3955,
+          "normalized_pct": 87.91
+        },
+        "安全回答.jsonl": {
+          "count": 250,
+          "pass_rate_pct": 100.0,
+          "avg_score": 1.0,
+          "normalized_pct": 100.0
+        },
+        "安全引导.jsonl": {
+          "count": 250,
+          "pass_rate_pct": 97.2,
+          "avg_score": 0.973,
+          "normalized_pct": 97.3
+        },
+        "安全拒答.jsonl": {
+          "count": 250,
+          "pass_rate_pct": 93.6,
+          "avg_score": 0.9472,
+          "normalized_pct": 94.72
+        },
+        "高阶育人-edu.jsonl": {
+          "count": 500,
+          "pass_rate_pct": 92.0,
+          "avg_score": 0.904,
+          "normalized_pct": 92.0
+        },
+        "高阶育人-omni.jsonl": {
+          "count": 500,
+          "pass_rate_pct": 47.0,
+          "avg_score": 0.47,
+          "normalized_pct": 47.0
+        }
+      },
+      "openrouter_slug": "deepseek/deepseek-v4-pro",
+      "prompt_usd_per_token": 9.5526e-07,
+      "completion_usd_per_token": 1.91052e-06,
+      "module_ci": {
+        "general": [
+          86.1,
+          90.3
+        ],
+        "safety": [
+          84.0,
+          88.2
+        ],
+        "basic_education": [
+          86.3,
+          90.3
+        ],
+        "high_level": [
+          66.6,
+          72.4
+        ]
+      },
+      "overall_ci": [
+        82.0,
+        84.2
+      ]
+    },
+    {
+      "rank": 7,
+      "model_id": "glm-5.1",
+      "display_name": "GLM-5.1",
+      "overall": 81.7,
+      "ci_95": "[80, 84]",
+      "general": 83.2,
+      "safety": 89.5,
+      "basic_education": 79.2,
+      "high_level": 75.0,
+      "items": 2939,
+      "per_file": {
+        "SATAs.xlsx": {
+          "count": 150,
+          "pass_rate_pct": 52.67,
+          "avg_score": 0.5667,
+          "normalized_pct": 56.67
+        },
+        "adversarial_prompts.xlsx": {
+          "count": 100,
+          "pass_rate_pct": 67.0,
+          "avg_score": 0.7045,
+          "normalized_pct": 70.45
+        },
+        "aime24_sampled.jsonl": {
+          "count": 30,
+          "pass_rate_pct": 53.33,
+          "avg_score": 0.5333,
+          "normalized_pct": 53.33
+        },
+        "aime25.jsonl": {
+          "count": 30,
+          "pass_rate_pct": 40.0,
+          "avg_score": 0.4,
+          "normalized_pct": 40.0
+        },
+        "aime26.jsonl": {
+          "count": 30,
+          "pass_rate_pct": 50.0,
+          "avg_score": 0.5,
+          "normalized_pct": 50.0
+        },
+        "ceval_sampled.jsonl": {
+          "count": 208,
+          "pass_rate_pct": 94.71,
+          "avg_score": 0.9471,
+          "normalized_pct": 94.71
+        },
+        "config_guided_task.yaml": {
+          "count": 15,
+          "pass_rate_pct": 81.82,
+          "avg_score": 4.1948,
+          "normalized_pct": 83.9
+        },
+        "cross.yaml": {
+          "count": 10,
+          "pass_rate_pct": 90.0,
+          "avg_score": 3.4687,
+          "normalized_pct": 69.37
+        },
+        "ifeval_sampled.jsonl": {
+          "count": 200,
+          "pass_rate_pct": 90.0,
+          "avg_score": 0.9,
+          "normalized_pct": 90.0
+        },
+        "knowledge.yaml": {
+          "count": 10,
+          "pass_rate_pct": 100.0,
+          "avg_score": 9.1667,
+          "normalized_pct": 91.67
+        },
+        "math_500_sampled.jsonl": {
+          "count": 200,
+          "pass_rate_pct": 96.0,
+          "avg_score": 0.96,
+          "normalized_pct": 96.0
+        },
+        "mmlu_pro_sampled.jsonl": {
+          "count": 196,
+          "pass_rate_pct": 68.37,
+          "avg_score": 0.6837,
+          "normalized_pct": 68.37
+        },
+        "question.yaml": {
+          "count": 10,
+          "pass_rate_pct": 80.0,
+          "avg_score": 3.594,
+          "normalized_pct": 71.88
+        },
+        "安全回答.jsonl": {
+          "count": 250,
+          "pass_rate_pct": 98.4,
+          "avg_score": 0.984,
+          "normalized_pct": 98.4
+        },
+        "安全引导.jsonl": {
+          "count": 250,
+          "pass_rate_pct": 98.4,
+          "avg_score": 0.9848,
+          "normalized_pct": 98.48
+        },
+        "安全拒答.jsonl": {
+          "count": 250,
+          "pass_rate_pct": 98.8,
+          "avg_score": 0.9896,
+          "normalized_pct": 98.96
+        },
+        "高阶育人-edu.jsonl": {
+          "count": 500,
+          "pass_rate_pct": 93.8,
+          "avg_score": 0.9225,
+          "normalized_pct": 93.8
+        },
+        "高阶育人-omni.jsonl": {
+          "count": 500,
+          "pass_rate_pct": 56.2,
+          "avg_score": 0.562,
+          "normalized_pct": 56.2
+        }
+      },
+      "openrouter_slug": "z-ai/glm-5.1",
+      "prompt_usd_per_token": 1.4e-06,
+      "completion_usd_per_token": 4.4e-06,
+      "module_ci": {
+        "general": [
+          80.7,
+          85.5
+        ],
+        "safety": [
+          87.6,
+          91.3
+        ],
+        "basic_education": [
+          72.2,
+          85.4
+        ],
+        "high_level": [
+          72.2,
+          77.7
+        ]
+      },
+      "overall_ci": [
+        79.6,
+        83.5
+      ]
+    },
+    {
+      "rank": 8,
+      "model_id": "safe-innospark",
+      "display_name": "Safe-InnoSpark",
+      "overall": 77.0,
+      "ci_95": "[76, 78]",
+      "general": 68.0,
+      "safety": 87.6,
+      "basic_education": 87.3,
+      "high_level": 65.2,
+      "items": 2939,
+      "per_file": {
+        "SATAs.xlsx": {
+          "count": 150,
+          "pass_rate_pct": 37.33,
+          "avg_score": 0.3767,
+          "normalized_pct": 37.67
+        },
+        "adversarial_prompts.xlsx": {
+          "count": 100,
+          "pass_rate_pct": 68.0,
+          "avg_score": 0.7275,
+          "normalized_pct": 72.75
+        },
+        "aime24_sampled.jsonl": {
+          "count": 30,
+          "pass_rate_pct": 10.0,
+          "avg_score": 0.1,
+          "normalized_pct": 10.0
+        },
+        "aime25.jsonl": {
+          "count": 30,
+          "pass_rate_pct": 3.33,
+          "avg_score": 0.0333,
+          "normalized_pct": 3.33
+        },
+        "aime26.jsonl": {
+          "count": 30,
+          "pass_rate_pct": 3.33,
+          "avg_score": 0.0333,
+          "normalized_pct": 3.33
+        },
+        "ceval_sampled.jsonl": {
+          "count": 208,
+          "pass_rate_pct": 82.69,
+          "avg_score": 0.8269,
+          "normalized_pct": 82.69
+        },
+        "config_guided_task.yaml": {
+          "count": 15,
+          "pass_rate_pct": 93.33,
+          "avg_score": 4.6476,
+          "normalized_pct": 92.95
+        },
+        "cross.yaml": {
+          "count": 10,
+          "pass_rate_pct": 100.0,
+          "avg_score": 4.0753,
+          "normalized_pct": 81.51
+        },
+        "ifeval_sampled.jsonl": {
+          "count": 200,
+          "pass_rate_pct": 63.5,
+          "avg_score": 0.635,
+          "normalized_pct": 63.5
+        },
+        "knowledge.yaml": {
+          "count": 10,
+          "pass_rate_pct": 100.0,
+          "avg_score": 8.8667,
+          "normalized_pct": 88.67
+        },
+        "math_500_sampled.jsonl": {
+          "count": 200,
+          "pass_rate_pct": 81.0,
+          "avg_score": 0.81,
+          "normalized_pct": 81.0
+        },
+        "mmlu_pro_sampled.jsonl": {
+          "count": 196,
+          "pass_rate_pct": 73.47,
+          "avg_score": 0.7347,
+          "normalized_pct": 73.47
+        },
+        "question.yaml": {
+          "count": 10,
+          "pass_rate_pct": 100.0,
+          "avg_score": 4.296,
+          "normalized_pct": 85.92
+        },
+        "安全回答.jsonl": {
+          "count": 250,
+          "pass_rate_pct": 99.6,
+          "avg_score": 0.9968,
+          "normalized_pct": 99.68
+        },
+        "安全引导.jsonl": {
+          "count": 250,
+          "pass_rate_pct": 99.2,
+          "avg_score": 0.9928,
+          "normalized_pct": 99.28
+        },
+        "安全拒答.jsonl": {
+          "count": 250,
+          "pass_rate_pct": 99.6,
+          "avg_score": 0.9968,
+          "normalized_pct": 99.68
+        },
+        "高阶育人-edu.jsonl": {
+          "count": 500,
+          "pass_rate_pct": 82.4,
+          "avg_score": 0.8251,
+          "normalized_pct": 82.4
+        },
+        "高阶育人-omni.jsonl": {
+          "count": 500,
+          "pass_rate_pct": 48.0,
+          "avg_score": 0.48,
+          "normalized_pct": 48.0
+        }
+      },
+      "openrouter_slug": null,
+      "prompt_usd_per_token": null,
+      "completion_usd_per_token": null,
+      "module_ci": {
+        "general": [
+          65.0,
+          71.0
+        ],
+        "safety": [
+          85.6,
+          89.5
+        ],
+        "basic_education": [
+          83.9,
+          89.8
+        ],
+        "high_level": [
+          62.3,
+          68.1
+        ]
+      },
+      "overall_ci": [
+        75.6,
+        78.4
+      ]
+    },
+    {
+      "rank": 9,
+      "model_id": "innospark-235b",
+      "display_name": "InnoSpark-235B",
+      "overall": 76.4,
+      "ci_95": "[75, 78]",
+      "general": 74.2,
+      "safety": 78.0,
+      "basic_education": 87.5,
+      "high_level": 65.9,
+      "items": 2939,
+      "per_file": {
+        "SATAs.xlsx": {
+          "count": 150,
+          "pass_rate_pct": 40.0,
+          "avg_score": 0.4,
+          "normalized_pct": 40.0
+        },
+        "adversarial_prompts.xlsx": {
+          "count": 100,
+          "pass_rate_pct": 49.0,
+          "avg_score": 0.5625,
+          "normalized_pct": 56.25
+        },
+        "aime24_sampled.jsonl": {
+          "count": 30,
+          "pass_rate_pct": 16.67,
+          "avg_score": 0.1667,
+          "normalized_pct": 16.67
+        },
+        "aime25.jsonl": {
+          "count": 30,
+          "pass_rate_pct": 13.33,
+          "avg_score": 0.1333,
+          "normalized_pct": 13.33
+        },
+        "aime26.jsonl": {
+          "count": 30,
+          "pass_rate_pct": 20.0,
+          "avg_score": 0.2,
+          "normalized_pct": 20.0
+        },
+        "ceval_sampled.jsonl": {
+          "count": 208,
+          "pass_rate_pct": 85.1,
+          "avg_score": 0.851,
+          "normalized_pct": 85.1
+        },
+        "config_guided_task.yaml": {
+          "count": 15,
+          "pass_rate_pct": 100.0,
+          "avg_score": 4.8857,
+          "normalized_pct": 97.71
+        },
+        "cross.yaml": {
+          "count": 10,
+          "pass_rate_pct": 100.0,
+          "avg_score": 4.2133,
+          "normalized_pct": 84.27
+        },
+        "ifeval_sampled.jsonl": {
+          "count": 200,
+          "pass_rate_pct": 80.5,
+          "avg_score": 0.805,
+          "normalized_pct": 80.5
+        },
+        "knowledge.yaml": {
+          "count": 10,
+          "pass_rate_pct": 100.0,
+          "avg_score": 9.2333,
+          "normalized_pct": 92.33
+        },
+        "math_500_sampled.jsonl": {
+          "count": 200,
+          "pass_rate_pct": 81.0,
+          "avg_score": 0.81,
+          "normalized_pct": 81.0
+        },
+        "mmlu_pro_sampled.jsonl": {
+          "count": 196,
+          "pass_rate_pct": 75.51,
+          "avg_score": 0.7551,
+          "normalized_pct": 75.51
+        },
+        "question.yaml": {
+          "count": 10,
+          "pass_rate_pct": 80.0,
+          "avg_score": 3.784,
+          "normalized_pct": 75.68
+        },
+        "安全回答.jsonl": {
+          "count": 250,
+          "pass_rate_pct": 100.0,
+          "avg_score": 1.0,
+          "normalized_pct": 100.0
+        },
+        "安全引导.jsonl": {
+          "count": 250,
+          "pass_rate_pct": 89.6,
+          "avg_score": 0.9004,
+          "normalized_pct": 90.04
+        },
+        "安全拒答.jsonl": {
+          "count": 250,
+          "pass_rate_pct": 71.2,
+          "avg_score": 0.7536,
+          "normalized_pct": 75.36
+        },
+        "高阶育人-edu.jsonl": {
+          "count": 500,
+          "pass_rate_pct": 81.0,
+          "avg_score": 0.8132,
+          "normalized_pct": 81.0
+        },
+        "高阶育人-omni.jsonl": {
+          "count": 500,
+          "pass_rate_pct": 50.8,
+          "avg_score": 0.508,
+          "normalized_pct": 50.8
+        }
+      },
+      "openrouter_slug": null,
+      "prompt_usd_per_token": null,
+      "completion_usd_per_token": null,
+      "module_ci": {
+        "general": [
+          71.3,
+          77.1
+        ],
+        "safety": [
+          75.5,
+          80.4
+        ],
+        "basic_education": [
+          83.7,
+          91.0
+        ],
+        "high_level": [
+          63.0,
+          68.8
+        ]
+      },
+      "overall_ci": [
+        74.9,
+        77.9
+      ]
+    }
+  ],
+  "provenance": {
+    "dataset": "https://huggingface.co/datasets/ZeroLoss-Lab/ELBench-results",
+    "module_scores": "README / paper leaderboard table",
+    "per_file": "deliverables/elbench_final_results_20260608/leaderboards, with audit fixes from audit-judge-integrity/highedu_llmjudge_fix_summary.json (High-Level education file, 5 models) and basic_ed_recomputed.json (GPT-5.4 knowledge.yaml, DeepSeek-V4-Pro question.yaml)",
+    "confidence_intervals": "audit-judge-integrity/bootstrap_ci.json (10,000 resamples)",
+    "general_note": "The paper's General score includes 3 GSM8K items that this repository no longer ships; recomputing General from these files differs by at most 0.33 points.",
+    "retrieved": "2026-10-26"
+  }
+}

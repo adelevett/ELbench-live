@@ -1,0 +1,98 @@
+mappings:
+  safety_refusal_jsonl:
+    sample_id_fields: []
+    prompt_fields: [question]
+    dimension_fields: []
+    reference_fields: [label]
+    metadata_fields: [label, subcategory]
+  safety_guidance_jsonl:
+    sample_id_fields: []
+    prompt_fields: [question]
+    dimension_fields: []
+    reference_fields: [question_type, category]
+    metadata_fields: [question_type, category, subcategory]
+  safety_answer_jsonl:
+    sample_id_fields: []
+    prompt_fields: [question]
+    dimension_fields: []
+    reference_fields: [label]
+    metadata_fields: [label, subcategory]
+  teaching_harm_xlsx:
+    sample_id_fields: [ID]
+    dimension_fields: []
+    reference_fields: [Answer]
+    metadata_fields: [Question_Chinese, Question_English, Answer]
+    prompt_template: |
+      [Question_Chinese]
+      {{ Question_Chinese }}
+
+      [Question_English]
+      {{ Question_English }}
+  adversarial_safety_xlsx:
+    sample_id_fields: [ID]
+    dimension_fields: []
+    reference_fields: []
+    metadata_fields:
+      [Teacher_Prompt_EN, Student_Statement_EN, Teacher_Prompt_CN, Student_Statement_CN]
+    prompt_template: |
+      [Teacher_Prompt_CN]
+      {{ Teacher_Prompt_CN }}
+
+      [Student_Statement_CN]
+      {{ Student_Statement_CN }}
+
+      [Teacher_Prompt_EN]
+      {{ Teacher_Prompt_EN }}
+
+      [Student_Statement_EN]
+      {{ Student_Statement_EN }}
+  highlevel_edu_jsonl:
+    sample_id_fields: []
+    prompt_fields: [question]
+    dimension_fields: []
+    dimension_resolver: highlevel_edu
+    reference_fields: [Score, Scoring Details, Personalized Feedback]
+    metadata_fields:
+      [Subject, Level, Question Type, Question, Student's Answer, Score, Scoring Details, Personalized Feedback, _scene]
+  highlevel_omni_jsonl:
+    sample_id_fields: [id]
+    prompt_fields: [question]
+    dimension_fields: [field]
+    reference_fields: [answer, reasonableness]
+    metadata_fields: [type, field, answer, reasonableness]
+  basic_education_yaml:
+    sample_id_fields: []
+    prompt_fields: []
+    dimension_fields: []
+    reference_fields: []
+    metadata_fields: []
+  mmlu_pro_jsonl:
+    sample_id_fields: [id]
+    prompt_fields: []
+    dimension_fields: [subset_key]
+    reference_fields: [target]
+    metadata_fields: [metadata, choices, subset_key]
+  ceval_jsonl:
+    sample_id_fields: [id]
+    prompt_fields: []
+    dimension_fields: [metadata.subject]
+    reference_fields: [target]
+    metadata_fields: [metadata, choices, subset_key]
+  ifeval_jsonl:
+    sample_id_fields: [id]
+    prompt_fields: []
+    dimension_fields: []
+    reference_fields: [target]
+    metadata_fields: [metadata, instruction_id_list, kwargs, key, prompt]
+  math_500_jsonl:
+    sample_id_fields: [id]
+    prompt_fields: []
+    dimension_fields: [subset_key]
+    reference_fields: [target]
+    metadata_fields: [metadata, subset_key]
+  aime_jsonl:
+    sample_id_fields: [id]
+    prompt_fields: []
+    dimension_fields: []
+    reference_fields: [target]
+    metadata_fields: [metadata, subset_key]

@@ -1,0 +1,241 @@
+files:
+  - canonical_name: 安全拒答.jsonl
+    module: 安全可信
+    subset: 通用-应拒答
+    file_type: jsonl
+    task: safety_refusal
+    loader_name: jsonl
+    mapping_key: safety_refusal_jsonl
+    path_hints:
+      - 安全可信/通用-应拒答/安全拒答.jsonl
+      - 安全拒答.jsonl
+    filename_patterns:
+      - 安全拒答.jsonl
+    aliases: []
+  - canonical_name: 安全引导.jsonl
+    module: 安全可信
+    subset: 通用-引导回答
+    file_type: jsonl
+    task: safety_guidance
+    loader_name: jsonl
+    mapping_key: safety_guidance_jsonl
+    path_hints:
+      - 安全可信/通用-引导回答/安全引导.jsonl
+      - 安全引导.jsonl
+    filename_patterns:
+      - 安全引导.jsonl
+    aliases: []
+  - canonical_name: 安全回答.jsonl
+    module: 安全可信
+    subset: 通用-应回答
+    file_type: jsonl
+    task: safety_answer
+    loader_name: jsonl
+    mapping_key: safety_answer_jsonl
+    path_hints:
+      - 安全可信/通用-应回答/安全回答.jsonl
+      - 安全回答.jsonl
+    filename_patterns:
+      - 安全回答.jsonl
+    aliases: []
+  - canonical_name: SATAs.xlsx
+    module: 安全可信
+    subset: 教育-教学安全
+    file_type: xlsx
+    task: teaching_harm
+    loader_name: xlsx
+    mapping_key: teaching_harm_xlsx
+    path_hints:
+      - 安全可信/教育-教学安全/SATAs.xlsx
+      - SATAs.xlsx
+      - SATAs（150）.xlsx
+    filename_patterns:
+      - SATAs.xlsx
+      - SATAs*.xlsx
+    aliases:
+      - SATAs（150）.xlsx
+  - canonical_name: adversarial_prompts.xlsx
+    module: 安全可信
+    subset: 教育-教学安全
+    file_type: xlsx
+    task: adversarial_safety
+    loader_name: xlsx
+    mapping_key: adversarial_safety_xlsx
+    path_hints:
+      - 安全可信/教育-教学安全/adversarial_prompts.xlsx
+      - adversarial_prompts.xlsx
+      - adversarial_prompts（100）.xlsx
+    filename_patterns:
+      - adversarial_prompts.xlsx
+      - adversarial_prompts*.xlsx
+    aliases:
+      - adversarial_prompts（100）.xlsx
+  - canonical_name: 高阶育人-edu.jsonl
+    module: 高阶育人
+    subset: edu
+    file_type: jsonl
+    task: highlevel_edu
+    loader_name: jsonl
+    mapping_key: highlevel_edu_jsonl
+    path_hints:
+      - 高阶育人/edu/高阶育人-edu.jsonl
+      - 高阶育人-edu.jsonl
+    filename_patterns:
+      - 高阶育人-edu.jsonl
+    aliases: []
+  - canonical_name: 高阶育人-omni.jsonl
+    module: 高阶育人
+    subset: omni
+    file_type: jsonl
+    task: highlevel_omni
+    loader_name: jsonl
+    mapping_key: highlevel_omni_jsonl
+    path_hints:
+      - 高阶育人/omni/高阶育人-omni.jsonl
+      - 高阶育人-omni.jsonl
+    filename_patterns:
+      - 高阶育人-omni.jsonl
+    aliases: []
+  - canonical_name: knowledge.yaml
+    module: 基本教育
+    subset: 知识点讲解
+    file_type: yaml
+    task: basic_knowledge_point_explanation
+    loader_name: basic_education_yaml
+    mapping_key: basic_education_yaml
+    path_hints:
+      - 基本教育/知识点讲解/knowledge.yaml
+      - knowledge.yaml
+    filename_patterns:
+      - knowledge.yaml
+    aliases: []
+  - canonical_name: question.yaml
+    module: 基本教育
+    subset: 情景化出题
+    file_type: yaml
+    task: basic_contextualized_question_generation
+    loader_name: basic_education_yaml
+    mapping_key: basic_education_yaml
+    path_hints:
+      - 基本教育/情景化出题/question.yaml
+      - question.yaml
+    filename_patterns:
+      - question.yaml
+    aliases: []
+  - canonical_name: cross.yaml
+    module: 基本教育
+    subset: 跨学科教案生成
+    file_type: yaml
+    task: basic_interdisciplinary_lesson_plan_generation
+    loader_name: basic_education_yaml
+    mapping_key: basic_education_yaml
+    path_hints:
+      - 基本教育/跨学科教案生成/cross.yaml
+      - cross.yaml
+    filename_patterns:
+      - cross.yaml
+    aliases: []
+  - canonical_name: config_guided_task.yaml
+    module: 基本教育
+    subset: 引导式讲题
+    file_type: yaml
+    task: basic_guided_problem_solving_teaching
+    loader_name: basic_education_yaml
+    mapping_key: basic_education_yaml
+    path_hints:
+      - 基本教育/引导式讲题/config_guided_task.yaml
+      - config_guided_task.yaml
+    filename_patterns:
+      - config_guided_task.yaml
+    aliases: []
+  - canonical_name: mmlu_pro_sampled.jsonl
+    module: 通用模型
+    subset: mmlu_pro
+    file_type: jsonl
+    task: mmlu_pro
+    loader_name: mmlu_pro_jsonl
+    mapping_key: mmlu_pro_jsonl
+    path_hints:
+      - 通用/mmlu_pro_sampled.jsonl
+      - mmlu_pro_sampled.jsonl
+    filename_patterns:
+      - mmlu_pro_sampled.jsonl
+    aliases: []
+  - canonical_name: ceval_sampled.jsonl
+    module: 通用模型
+    subset: ceval
+    file_type: jsonl
+    task: ceval
+    loader_name: ceval_jsonl
+    mapping_key: ceval_jsonl
+    path_hints:
+      - 通用/ceval_sampled.jsonl
+      - ceval_sampled.jsonl
+    filename_patterns:
+      - ceval_sampled.jsonl
+    aliases: []
+  - canonical_name: ifeval_sampled.jsonl
+    module: 通用模型
+    subset: ifeval
+    file_type: jsonl
+    task: ifeval
+    loader_name: ifeval_jsonl
+    mapping_key: ifeval_jsonl
+    path_hints:
+      - 通用/ifeval_sampled.jsonl
+      - ifeval_sampled.jsonl
+    filename_patterns:
+      - ifeval_sampled.jsonl
+    aliases: []
+  - canonical_name: math_500_sampled.jsonl
+    module: 通用模型
+    subset: math_500
+    file_type: jsonl
+    task: math_500
+    loader_name: math_500_jsonl
+    mapping_key: math_500_jsonl
+    path_hints:
+      - 通用/math_500_sampled.jsonl
+      - math_500_sampled.jsonl
+    filename_patterns:
+      - math_500_sampled.jsonl
+    aliases: []
+  - canonical_name: aime24_sampled.jsonl
+    module: 通用模型
+    subset: aime24
+    file_type: jsonl
+    task: aime24
+    loader_name: aime_jsonl
+    mapping_key: aime_jsonl
+    path_hints:
+      - 通用/aime24_sampled.jsonl
+      - aime24_sampled.jsonl
+    filename_patterns:
+      - aime24_sampled.jsonl
+    aliases: []
+  - canonical_name: aime25.jsonl
+    module: 通用模型
+    subset: aime25
+    file_type: jsonl
+    task: aime25
+    loader_name: aime_jsonl
+    mapping_key: aime_jsonl
+    path_hints:
+      - 通用/aime25.jsonl
+      - aime25.jsonl
+    filename_patterns:
+      - aime25.jsonl
+    aliases: []
+  - canonical_name: aime26.jsonl
+    module: 通用模型
+    subset: aime26
+    file_type: jsonl
+    task: aime26
+    loader_name: aime_jsonl
+    mapping_key: aime_jsonl
+    path_hints:
+      - 通用/aime26.jsonl
+      - aime26.jsonl
+    filename_patterns:
+      - aime26.jsonl
+    aliases: []

@@ -1,0 +1,35 @@
+default_judge_model_id: qwen-test
+tasks:
+  safety_refusal:
+    mode: llm
+    template: safety_refusal
+  safety_guidance:
+    mode: llm
+    template: safety_guidance
+  safety_answer:
+    mode: llm
+    template: safety_answer
+  teaching_harm:
+    mode: rule
+  adversarial_safety:
+    mode: llm
+    template: adversarial_safety
+  highlevel_edu:
+    mode: rule
+    template: highlevel_edu
+  highlevel_omni:
+    mode: rule
+  mmlu_pro:
+    mode: rule
+  ceval:
+    mode: rule
+  ifeval:
+    mode: rule
+  math_500:
+    mode: rule
+  aime24:
+    mode: rule
+  aime25:
+    mode: rule
+  aime26:
+    mode: rule

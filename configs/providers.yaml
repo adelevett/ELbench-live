@@ -1,0 +1,21 @@
+providers:
+  - provider_name: mock
+    adapter: mock
+    capabilities:
+      supports_system_prompt: true
+      supports_stream: false
+      supports_reasoning: false
+    default_timeout: 10
+    rate_limits:
+      max_concurrency: 100
+  - provider_name: openai_compatible
+    adapter: openai_compatible
+    capabilities:
+      supports_system_prompt: true
+      supports_stream: true
+      supports_reasoning: true
+    default_timeout: 60
+    endpoint_path: /chat/completions
+    headers: {}
+    rate_limits:
+      max_concurrency: 100

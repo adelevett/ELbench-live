@@ -1,0 +1,473 @@
+models:
+  - model_id: mock.default
+    provider_name: mock
+    model_name: mock-echo
+    temperature: 0
+    max_tokens: 384
+    timeout: 10
+    retry:
+      max_attempts: 1
+      initial_delay_seconds: 0.5
+      max_delay_seconds: 1
+      backoff_multiplier: 1
+      jitter_ratio: 0
+    rate_limits:
+      max_concurrency: 100
+    provider_kwargs:
+      prefix: "[MOCK]"
+  - model_id: mock.judge
+    provider_name: mock
+    model_name: mock-judge
+    temperature: 0
+    max_tokens: 512
+    timeout: 10
+    retry:
+      max_attempts: 1
+      initial_delay_seconds: 0.5
+      max_delay_seconds: 1
+      backoff_multiplier: 1
+      jitter_ratio: 0
+    rate_limits:
+      max_concurrency: 100
+    provider_kwargs:
+      mode: judge_json
+  - model_id: qwen-test
+    provider_name: openai_compatible
+    model_name: qwen
+    api_base: https://o9peaj85dhhcchhhheakbppg8mj8cboj.openapi-qb-ai.sii.edu.cn/v1
+    api_key_env: QWEN_TEST_API_KEY
+    temperature: 0
+    max_tokens: 1024
+    timeout: 120
+    retry:
+      max_attempts: 3
+      initial_delay_seconds: 1
+      max_delay_seconds: 20
+      backoff_multiplier: 2
+      jitter_ratio: 0.2
+    rate_limits:
+      max_concurrency: 64
+    supports_system_prompt: true
+    supports_stream: true
+    supports_reasoning: true
+    provider_kwargs:
+      chat_template_kwargs:
+        enable_thinking: false
+      runtime_max_tokens: 512
+      served_model_name: qwen3.6-35B-sft-v1
+  - model_id: qwen3.6-35B-sft-v1
+    provider_name: openai_compatible
+    model_name: qwen
+    api_base: https://o9peaj85dhhcchhhheakbppg8mj8cboj.openapi-qb-ai.sii.edu.cn/v1
+    api_key_env: QWEN_TEST_API_KEY
+    temperature: 0
+    max_tokens: 1024
+    timeout: 120
+    retry:
+      max_attempts: 3
+      initial_delay_seconds: 1
+      max_delay_seconds: 20
+      backoff_multiplier: 2
+      jitter_ratio: 0.2
+      retryable_status_codes: [408, 409, 429, 500, 502, 503, 504]
+    rate_limits:
+      max_concurrency: 4
+    supports_system_prompt: true
+    supports_stream: true
+    supports_reasoning: true
+    provider_kwargs:
+      chat_template_kwargs:
+        enable_thinking: false
+      served_model_name: qwen3.6-35B-sft-v1
+  - model_id: gpt-5.4
+    provider_name: openai_compatible
+    model_name: gpt-5.4
+    api_base: http://35.220.164.252:3888/v1
+    api_key_env: EXTERNAL_SUPPORT_API_KEY
+    temperature: 0
+    max_tokens: 4096
+    timeout: 120
+    retry:
+      max_attempts: 2
+      initial_delay_seconds: 1
+      max_delay_seconds: 20
+      backoff_multiplier: 2
+      jitter_ratio: 0.2
+    rate_limits:
+      max_concurrency: 100
+    supports_system_prompt: true
+    supports_stream: false
+    supports_reasoning: true
+    provider_kwargs: {}
+  - model_id: gpt-5.2-pro
+    provider_name: openai_compatible
+    model_name: gpt-5.2-pro
+    api_base: http://35.220.164.252:3888/v1
+    api_key_env: EXTERNAL_SUPPORT_API_KEY
+    temperature: 0
+    max_tokens: 8192
+    timeout: 240
+    retry:
+      max_attempts: 2
+      initial_delay_seconds: 1
+      max_delay_seconds: 20
+      backoff_multiplier: 2
+      jitter_ratio: 0.2
+    rate_limits:
+      max_concurrency: 100
+    supports_system_prompt: true
+    supports_stream: false
+    supports_reasoning: true
+    provider_kwargs: {}
+  - model_id: claude-sonnet-4-6
+    provider_name: openai_compatible
+    model_name: claude-sonnet-4-6
+    api_base: https://gpt-agent.cc/v1
+    api_key_env: GPT_AGENT_API_KEY
+    temperature: 0
+    max_tokens: 4096
+    timeout: 120
+    retry:
+      max_attempts: 2
+      initial_delay_seconds: 1
+      max_delay_seconds: 20
+      backoff_multiplier: 2
+      jitter_ratio: 0.2
+    rate_limits:
+      max_concurrency: 100
+    supports_system_prompt: true
+    supports_stream: false
+    supports_reasoning: true
+    provider_kwargs: {}
+  - model_id: claude-opus-4-6
+    provider_name: openai_compatible
+    model_name: claude-opus-4-6
+    api_base: https://gpt-agent.cc/v1
+    api_key_env: GPT_AGENT_API_KEY
+    temperature: 0
+    max_tokens: 4096
+    timeout: 120
+    retry:
+      max_attempts: 2
+      initial_delay_seconds: 1
+      max_delay_seconds: 20
+      backoff_multiplier: 2
+      jitter_ratio: 0.2
+    rate_limits:
+      max_concurrency: 100
+    supports_system_prompt: true
+    supports_stream: false
+    supports_reasoning: true
+    provider_kwargs: {}
+  - model_id: gemini-3.5-flash
+    provider_name: openai_compatible
+    model_name: gemini-3.5-flash
+    api_base: http://35.220.164.252:3888/v1
+    api_key_env: EXTERNAL_SUPPORT_API_KEY
+    temperature: 0
+    max_tokens: 8192
+    timeout: 240
+    retry:
+      max_attempts: 2
+      initial_delay_seconds: 1
+      max_delay_seconds: 20
+      backoff_multiplier: 2
+      jitter_ratio: 0.2
+    rate_limits:
+      max_concurrency: 100
+    supports_system_prompt: true
+    supports_stream: false
+    supports_reasoning: true
+    provider_kwargs: {}
+  - model_id: deepseek-v4-pro
+    provider_name: openai_compatible
+    model_name: deepseek-v4-pro
+    api_base: https://api.deepseek.com
+    api_key_env: DEEPSEEK_OFFICIAL_API_KEY
+    temperature: 0
+    max_tokens: 8192
+    timeout: 240
+    retry:
+      max_attempts: 2
+      initial_delay_seconds: 1
+      max_delay_seconds: 20
+      backoff_multiplier: 2
+      jitter_ratio: 0.2
+    rate_limits:
+      max_concurrency: 100
+    supports_system_prompt: true
+    supports_stream: false
+    supports_reasoning: true
+    provider_kwargs: {}
+  - model_id: deepseek-v4-flash
+    provider_name: openai_compatible
+    model_name: deepseek-v4-flash
+    api_base: https://api.deepseek.com
+    api_key_env: DEEPSEEK_OFFICIAL_API_KEY
+    temperature: 0
+    max_tokens: 8192
+    timeout: 240
+    retry:
+      max_attempts: 2
+      initial_delay_seconds: 1
+      max_delay_seconds: 20
+      backoff_multiplier: 2
+      jitter_ratio: 0.2
+    rate_limits:
+      max_concurrency: 100
+    supports_system_prompt: true
+    supports_stream: false
+    supports_reasoning: true
+    provider_kwargs: {}
+  - model_id: glm-5.1
+    provider_name: openai_compatible
+    model_name: glm-5.1
+    api_base: https://open.bigmodel.cn/api/paas/v4
+    api_key_env: ZHIPU_OFFICIAL_API_KEY
+    temperature: 0
+    max_tokens: 8192
+    timeout: 240
+    retry:
+      max_attempts: 2
+      initial_delay_seconds: 1
+      max_delay_seconds: 20
+      backoff_multiplier: 2
+      jitter_ratio: 0.2
+    rate_limits:
+      max_concurrency: 10
+    supports_system_prompt: true
+    supports_stream: false
+    supports_reasoning: true
+    provider_kwargs: {}
+  - model_id: claude-opus-4-8
+    provider_name: openai_compatible
+    model_name: claude-opus-4-8
+    api_base: https://gpt-agent.cc/v1
+    api_key_env: GPT_AGENT_API_KEY
+    temperature: 0
+    max_tokens: 8192
+    timeout: 360
+    retry:
+      max_attempts: 2
+      initial_delay_seconds: 1
+      max_delay_seconds: 20
+      backoff_multiplier: 2
+      jitter_ratio: 0.2
+    rate_limits:
+      max_concurrency: 100
+    supports_system_prompt: true
+    supports_stream: false
+    supports_reasoning: true
+    provider_kwargs: {}
+  - model_id: doubao-seed-2.0-pro
+    provider_name: openai_compatible
+    model_name: doubao-seed-2.0-pro
+    api_base: https://gpt-agent.cc/v1
+    api_key_env: GPT_AGENT_API_KEY
+    temperature: 0
+    max_tokens: 8192
+    timeout: 240
+    retry:
+      max_attempts: 2
+      initial_delay_seconds: 1
+      max_delay_seconds: 20
+      backoff_multiplier: 2
+      jitter_ratio: 0.2
+    rate_limits:
+      max_concurrency: 100
+    supports_system_prompt: true
+    supports_stream: false
+    supports_reasoning: true
+    provider_kwargs: {}
+  - model_id: deepseek-v3.2
+    provider_name: openai_compatible
+    model_name: deepseek-v3.2
+    api_base: https://api.innospark.cn/v1
+    api_key_env: INNOSPARK_RELAY_API_KEY
+    temperature: 0
+    max_tokens: 8192
+    timeout: 240
+    retry:
+      max_attempts: 2
+      initial_delay_seconds: 1
+      max_delay_seconds: 20
+      backoff_multiplier: 2
+      jitter_ratio: 0.2
+    rate_limits:
+      max_concurrency: 100
+    supports_system_prompt: true
+    supports_stream: false
+    supports_reasoning: true
+    provider_kwargs: {}
+  - model_id: doubao-seed-2-0-pro-260215
+    provider_name: openai_compatible
+    model_name: doubao-seed-2-0-pro-260215
+    api_base: https://api.innospark.cn/v1
+    api_key_env: INNOSPARK_RELAY_API_KEY
+    temperature: 0
+    max_tokens: 8192
+    timeout: 240
+    retry:
+      max_attempts: 2
+      initial_delay_seconds: 1
+      max_delay_seconds: 20
+      backoff_multiplier: 2
+      jitter_ratio: 0.2
+    rate_limits:
+      max_concurrency: 100
+    supports_system_prompt: true
+    supports_stream: false
+    supports_reasoning: true
+    provider_kwargs: {}
+  - model_id: kimi-k2.6
+    provider_name: openai_compatible
+    model_name: kimi-k2.6
+    api_base: https://api.innospark.cn/v1
+    api_key_env: INNOSPARK_RELAY_API_KEY
+    temperature: 0
+    max_tokens: 8192
+    timeout: 240
+    retry:
+      max_attempts: 3
+      initial_delay_seconds: 1
+      max_delay_seconds: 20
+      backoff_multiplier: 2
+      jitter_ratio: 0.2
+    rate_limits:
+      rpm: 8
+      max_concurrency: 1
+    supports_system_prompt: true
+    supports_stream: false
+    supports_reasoning: true
+    provider_kwargs: {}
+  - model_id: gemini-3-flash-preview
+    provider_name: openai_compatible
+    model_name: gemini-3-flash-preview
+    api_base: https://api.innospark.cn/v1
+    api_key_env: INNOSPARK_RELAY_API_KEY
+    temperature: 0
+    max_tokens: 8192
+    timeout: 240
+    retry:
+      max_attempts: 3
+      initial_delay_seconds: 1
+      max_delay_seconds: 20
+      backoff_multiplier: 2
+      jitter_ratio: 0.2
+    rate_limits:
+      max_concurrency: 100
+    supports_system_prompt: true
+    supports_stream: false
+    supports_reasoning: true
+    provider_kwargs: {}
+  - model_id: deepseek-r1-250528
+    provider_name: openai_compatible
+    model_name: deepseek-r1-250528
+    api_base: https://api.innospark.cn/v1
+    api_key_env: INNOSPARK_RELAY_API_KEY
+    temperature: 0
+    max_tokens: 8192
+    timeout: 480
+    retry:
+      max_attempts: 2
+      initial_delay_seconds: 1
+      max_delay_seconds: 20
+      backoff_multiplier: 2
+      jitter_ratio: 0.2
+      retryable_status_codes: [408, 409, 429, 500, 502, 503, 504]
+    rate_limits:
+      max_concurrency: 2
+    supports_system_prompt: true
+    supports_stream: true
+    supports_reasoning: true
+    provider_kwargs: {}
+  - model_id: gemini-3.1-pro-preview
+    provider_name: openai_compatible
+    model_name: gemini-3.1-pro-preview
+    api_base: https://api.innospark.cn/v1
+    api_key_env: INNOSPARK_RELAY_API_KEY
+    temperature: 0
+    max_tokens: 8192
+    timeout: 240
+    retry:
+      max_attempts: 2
+      initial_delay_seconds: 1
+      max_delay_seconds: 20
+      backoff_multiplier: 2
+      jitter_ratio: 0.2
+    rate_limits:
+      max_concurrency: 100
+    supports_system_prompt: true
+    supports_stream: false
+    supports_reasoning: true
+    provider_kwargs: {}
+  - model_id: innospark-235b
+    provider_name: openai_compatible
+    model_name: InnoSpark-235B
+    api_base: https://innospark-api.aiecnu.net/v1
+    api_key_env: INNOSPARK_AIECNU_API_KEY
+    temperature: 0
+    max_tokens: 1024
+    timeout: 600
+    retry:
+      max_attempts: 2
+      initial_delay_seconds: 5
+      max_delay_seconds: 120
+      backoff_multiplier: 2
+      jitter_ratio: 0.2
+      retryable_status_codes: [408, 409, 429, 500, 502, 503, 504]
+    rate_limits:
+      max_concurrency: 1
+    supports_system_prompt: true
+    supports_stream: false
+    supports_reasoning: false
+    provider_kwargs:
+      runtime_max_tokens: 512
+  - model_id: qwen3.5-397b-a17b
+    provider_name: openai_compatible
+    model_name: qwen3.5-397b-a17b
+    api_base: https://dashscope.aliyuncs.com/compatible-mode/v1
+    api_key_env: DASHSCOPE_API_KEY
+    temperature: 0
+    max_tokens: 8192
+    timeout: 240
+    retry:
+      max_attempts: 3
+      initial_delay_seconds: 1
+      max_delay_seconds: 20
+      backoff_multiplier: 2
+      jitter_ratio: 0.2
+      retryable_status_codes: [408, 409, 429, 500, 502, 503, 504]
+    rate_limits:
+      max_concurrency: 10
+    supports_system_prompt: true
+    supports_stream: false
+    supports_reasoning: false
+    provider_kwargs:
+      # DashScope only honors top-level enable_thinking for this model;
+      # chat_template_kwargs.enable_thinking is IGNORED here (verified empirically),
+      # so we must send it at the top level. provider_kwargs is merged into the
+      # request payload top level by the openai_compatible adapter.
+      enable_thinking: false
+  - model_id: safe-innospark
+    provider_name: openai_compatible
+    model_name: Safe-InnoSpark
+    api_base: https://innospark-api.aiecnu.net/v1
+    api_key_env: INNOSPARK_AIECNU_API_KEY
+    temperature: 0
+    max_tokens: 1024
+    timeout: 600
+    retry:
+      max_attempts: 2
+      initial_delay_seconds: 5
+      max_delay_seconds: 120
+      backoff_multiplier: 2
+      jitter_ratio: 0.2
+      retryable_status_codes: [408, 409, 429, 500, 502, 503, 504]
+    rate_limits:
+      max_concurrency: 1
+    supports_system_prompt: true
+    supports_stream: false
+    supports_reasoning: false
+    provider_kwargs:
+      runtime_max_tokens: 512

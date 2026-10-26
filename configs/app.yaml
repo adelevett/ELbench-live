@@ -1,0 +1,27 @@
+project_name: ELBench
+data_root: data/benchmark_root
+output_root: outputs
+default_run:
+  max_concurrency: 100
+  checkpoint_interval: 1
+  log_every_n: 50
+  judge_enabled: true
+  summary_enabled: true
+  resume: true
+  retry:
+    max_attempts: 3
+    initial_delay_seconds: 1.0
+    max_delay_seconds: 20.0
+    backoff_multiplier: 2.0
+    jitter_ratio: 0.2
+    retryable_status_codes: [408, 409, 429, 500, 502, 503, 504]
+  provider_rate_limits:
+    default:
+      max_concurrency: 100
+benchmark_modules:
+  active:
+    - 安全可信
+    - 高阶育人
+    - 通用模型
+    - 基本教育
+  reserved: []
